@@ -10,23 +10,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Tarjousdemo</a>
+      
+      {{ link_to_route('home', 'LARB', null, ['class' => 'navbar-brand']) }}
+    
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li class="active"><a href="#">Link #1<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link #2</a></li>
       </ul>
-
-
+      
       <ul class="nav navbar-nav navbar-right">
   
-        @if (true)
-
-        {{--@if ($currentUser)--}}
+        @if (Auth::check())
 
           <li class="dropdown">
 
@@ -34,7 +33,7 @@
 
               <img class="nav-gravatar" src="//www.gravatar.com/avatar/{{-- $currentUser->email --}}?s=30" alt="{{-- $currentUser->username --}}" />
 
-              {{-- $currentUser->username --}}  Username<span class="caret"></span>
+              {{ Auth::user()->username }}<span class="caret"></span>
             
             </a>
 
@@ -42,15 +41,15 @@
               <li><a href="#">Settings</a></li>
               <li><a href="#">Preferences</a></li>
               <li class="divider"></li>
-              <li>{{-- link_to_route('logout_path', 'Log Out') --}}</li>
+              <li>{{ link_to_route('logout_path', 'Log Out') }}</li>
             </ul>
           </li>
   
         @else
 
-          <li>{{-- link_to_route('register_path', 'Register') --}}</li>
+          <li>{{ link_to_route('register_path', 'Register') }}</li>
 
-          <li>{{-- link_to_route('login_path', 'Log In') --}}</li>
+          <li>{{ link_to_route('login_path', 'Log In') }}</li>
 
         @endif 
 

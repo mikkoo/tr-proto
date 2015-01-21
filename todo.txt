@@ -1,4 +1,5 @@
 
+
 Tarjouspyynnöt demo TODO
 ------------------------
 
@@ -7,5 +8,9 @@ Tarjouspyynnöt demo TODO
 -html boilerplate joku käytä vai ottaako bootstrap huomioon eri vanhat selaimet yms???
 
 -bootstrapista luo compiled oma versio ja lisää softaan. (lingoneer tyylit lisää)
+
+
+
+-lisää lomakkeisiin required=required kenttä niin vähenee ongelmat hölmöjen käyttäjien kanssa
 
 

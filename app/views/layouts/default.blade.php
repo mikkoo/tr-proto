@@ -3,7 +3,7 @@
 
   <head>
     <meta charset='utf-8'>
-    <title>Tarjouspyynnöt demo</title>
+    <title>LARB</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
@@ -15,7 +15,7 @@
 
     <div class="container">
 
-      {{--@include('layouts.partials.messages')--}}
+      @include('layouts.partials.messages')
 
       @yield('content')
 
