@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      {{ link_to_route('home', 'LARB', null, ['class' => 'navbar-brand']) }}
+      {{ link_to_route('home', 'Tarjouspyyntödemo', null, ['class' => 'navbar-brand']) }}
     
     </div>
 
@@ -19,8 +19,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link #1<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link #2</a></li>
+        <li>{{ link_to_route('request_path', 'Lähetä tarjouspyyntö') }}</li>
+        <li>{{ link_to_route('translation_path', 'Lähetä tiedosto') }}</li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

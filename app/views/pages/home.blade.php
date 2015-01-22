@@ -4,21 +4,17 @@
 
 @section('content')
 
+
   <div class='jumbotron'>
 
-    <h1>LARB</h1>
+    <h1>Käännösdemo</h1>
 
-    <p class='lead'>Laravel set up with Authentication, Registration and twitter Bootstrap</p>
-
-    <p>This can be a starting point to build any Laravel web application.</p>
-
-    <p>Features:</p>
+    <p>Ominaisuudet:</p>
 
     <ul>
 
-      <li>Styling with twitter bootstrap (Sass running with Gulp)</li>
-      <li>User can register to the system</li>
-      <li>Registered user can log in or log out</li>
+      <li>Käyttäjä voi rekisteröityä</li>
+      <li>Rekisteröitynyt käyttäjä voi kirjautua sisään ja ulos</li>
 
     </ul>
 
@@ -27,26 +23,19 @@
 
     <ul>
 
-      <li>Confirmation by email</li>
-      <li>Password reset by email</li>
-      <li>Testing set up and testcases</li>
+      <li>Käyttäjä voi lähettää tarjouspyynnön</li>
+      <li>Käyttäjä voi seurata tarjouspyynnön tilaa</li>
 
     </ul>
 
-
-
-
   </div>
+
 
   <p>
 
-    {{ link_to_route('register_path', 'Sign Up!', null, ['class' => 'btn btn-lg btn-primary']) }}
+    {{ link_to_route('request_path', 'Lähetä tarjouspyyntö', null, ['class' => 'btn btn-lg btn-primary']) }}
 
   </p>
-
-
-
-
 
 
 

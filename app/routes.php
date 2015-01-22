@@ -18,6 +18,21 @@ Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
 
 
+Route::get('me', ['as' => 'me', 'uses' => 'RequestsController@me']);
+
+
+
+
+Route::get('test', function() {
+
+  new Lingoneer\Documents\Document;
+
+  new Lingoneer\Requests\Request;
+
+
+});
+
+
 
 // REGISTRATION
 
@@ -33,6 +48,21 @@ Route::get('login',   ['as' => 'login_path',  'uses' => 'SessionsController@crea
 Route::post('login',  ['as' => 'login_path',  'uses' => 'SessionsController@store'  ]);
 
 Route::get('logout',  ['as' => 'logout_path', 'uses' => 'SessionsController@destroy']);
+
+
+
+// REQUESTS
+
+Route::get('request',   ['as' => 'request_path', 'uses' => 'RequestsController@create']);
+Route::post('request',  ['as' => 'request_path', 'uses' => 'RequestsController@store']);
+
+
+// TRANSLATIONS
+
+Route::get('request',   ['as' => 'translation_path', 'uses' => 'TranslationsController@create']);
+Route::post('request',  ['as' => 'translation_path', 'uses' => 'TranslationsController@store']);
+
+
 
 
 

@@ -3,7 +3,7 @@
 
   <head>
     <meta charset='utf-8'>
-    <title>LARB</title>
+    <title>Tarjouspyyntödemo</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
