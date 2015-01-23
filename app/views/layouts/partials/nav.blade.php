@@ -22,8 +22,7 @@
         
         @if (Auth::check())
 
-          <li>{{ link_to_route('translation_create', 'Lähetä käännös') }}</li>
-          <li>{{ link_to_route('translation_index', 'Näytä käännökset') }}</li> 
+          <li>{{ link_to_route('translation_path', 'Käännökset') }}</li>
       
         @endif
 
@@ -45,7 +44,7 @@
             </a>
 
             <ul class="dropdown-menu" role="menu">
-              <li>{{ link_to_route('profile_path', 'Profiili') }}</li>
+              <li>{{ link_to_route('profile_path', 'Omat tiedot') }}</li>
               <li class="divider"></li>
               <li>{{ link_to_route('logout_path', 'Kirjaudu ulos') }}</li>
             </ul>

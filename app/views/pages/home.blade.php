@@ -15,6 +15,7 @@
 
       <li>Käyttäjä voi rekisteröityä</li>
       <li>Rekisteröitynyt käyttäjä voi kirjautua sisään ja ulos</li>
+      <li>Sisäänkirjautunut käyttäjä voi lähettää käännöstyön</li>
 
     </ul>
 
@@ -23,7 +24,6 @@
 
     <ul>
 
-      <li>Sisäänkirjautunut käyttäjä voi lähettää käännöstyön</li>
       <li>Käyttäjä voi seurata käännöstyön tilaa</li>
       <li>Sisäänkirjautunut kääntäjä näkee käännöstyön, voi ladata tiedostot ja vaihtaa käännöstyön tilaa</li>
 

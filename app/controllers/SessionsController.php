@@ -32,11 +32,11 @@ class SessionsController extends \BaseController {
  
     if (Auth::attempt($data)) {
 
-      return Redirect::home()->with('success', 'User now logged in!');
+      return Redirect::home()->with('success', 'Sisäänkirjautuminen onnistui!');
 
     } else {
 
-      return Redirect::back()->withInput()->with('danger', 'Login failed!');
+      return Redirect::back()->withInput()->with('danger', 'Virhe sisäänkirjautumisessa!');
     }
 
    
@@ -48,7 +48,7 @@ class SessionsController extends \BaseController {
 
     Auth::logout();
 
-    return Redirect::home()->with('info', 'User logged out.');
+    return Redirect::home()->with('info', 'Kirjauduit ulos.');
 
   }
 

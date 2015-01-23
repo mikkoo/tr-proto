@@ -2,8 +2,7 @@
 Käännösproto TODO
 ------------------------
 
-
-->kato laracast file uploads 101 loppuun ja selvitä miks ei se nyt sitten taaskaan toimi file uploadaus, mitä oikein rikoin siellä... ???
+-ei saa voida nähdä käännöksiä jos ei ole kirjautunut
 
 
 

@@ -7,6 +7,34 @@ use Lingoneer\Translations\Translation;
 class TranslationsController extends \BaseController {
 
 
+
+  public function index() {
+
+    //$user_id = Auth::id();
+
+    $translations = Translation::where('user_id', '=', Auth::id())->get();
+    
+
+ //   dd($translations);
+
+    //all()->with();
+    //$statuses()->with('user')->latest()->get();
+
+
+    return View::make('translations.index', ['translations' => $translations]);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
   // näyttää käännösten syöttö formin
   public function create() {
 

@@ -42,6 +42,9 @@ Route::post('register', ['as' => 'register_path', 'uses' => 'RegistrationControl
 Route::get('profile',   ['as' => 'profile_path', 'uses' => 'RegistrationController@profile']);
 
 
+Route::get('change_password', ['as' => 'change_password_path', 'uses' => 'RegistrationController@change_password']);
+
+
 // SESSIONS
 
 Route::get('login',   ['as' => 'login_path',  'uses' => 'SessionsController@create' ]);
@@ -59,10 +62,10 @@ Route::post('request',  ['as' => 'request_path', 'uses' => 'RequestsController@s
 
 // TRANSLATIONS
 
-Route::get('translations/index',   ['as' => 'translation_index', 'uses' => 'TranslationsController@index']);
+Route::get('translations',   ['as' => 'translation_path', 'uses' => 'TranslationsController@index']);
 
-Route::get('translations',   ['as' => 'translation_create', 'uses' => 'TranslationsController@create']);
-Route::post('translations',  ['as' => 'translation_create', 'uses' => 'TranslationsController@store']);
+Route::get('translations/create',   ['as' => 'translation_create', 'uses' => 'TranslationsController@create']);
+Route::post('translations/create',  ['as' => 'translation_create', 'uses' => 'TranslationsController@store']);
 
 
 

@@ -14,10 +14,18 @@ class RegistrationController extends \BaseController {
   // shows users information
   public function profile() {
 
-    return View::make('registration.profile');
+    $user = Auth::user();
+
+    return View::make('registration.profile', ['user' => $user]);
 
   }
 
+
+  public function change_password() {
+
+    return 'Vaihda salasana -toiminto';
+
+  }
 
 
 
