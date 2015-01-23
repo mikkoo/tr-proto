@@ -39,7 +39,7 @@ Route::get('test', function() {
 Route::get('register',  ['as' => 'register_path', 'uses' => 'RegistrationController@create']);
 Route::post('register', ['as' => 'register_path', 'uses' => 'RegistrationController@store']);
 
-
+Route::get('profile',   ['as' => 'profile_path', 'uses' => 'RegistrationController@profile']);
 
 
 // SESSIONS
@@ -59,9 +59,10 @@ Route::post('request',  ['as' => 'request_path', 'uses' => 'RequestsController@s
 
 // TRANSLATIONS
 
-Route::get('request',   ['as' => 'translation_path', 'uses' => 'TranslationsController@create']);
-Route::post('request',  ['as' => 'translation_path', 'uses' => 'TranslationsController@store']);
+Route::get('translations/index',   ['as' => 'translation_index', 'uses' => 'TranslationsController@index']);
 
+Route::get('translations',   ['as' => 'translation_create', 'uses' => 'TranslationsController@create']);
+Route::post('translations',  ['as' => 'translation_create', 'uses' => 'TranslationsController@store']);
 
 
 

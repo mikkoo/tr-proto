@@ -9,17 +9,19 @@
 
     <div class="col-md-12">
 
-      <h1>Lähetä käännettävä tiedosto</h1>
+      <h1>Lähetä käännös</h1>
+
+      <p>Liitä käännettävät dokumentit tähän</p>
 
 
       @include('layouts.partials.errors')
 
 
-      {{ Form::open(['route' => 'translation_path', 'files' => 'true']) }}
+      {{ Form::open(['route' => 'translation_create', 'files' => 'true']) }}
 
         <div class="form-group">
 
-          {{ Form::label('title', 'Title:') }}
+          {{ Form::label('title', 'Otsikko:') }}
           {{ Form::text('title', null, ['class' => 'form-control']) }}
 
         </div>
@@ -27,16 +29,16 @@
 
         <div class="form-group">
 
-          {{ Form::label('body', 'Body:') }}
-          {{ Form::textarea('body', null, ['class' => 'form-control']) }}
+          {{ Form::label('description', 'Kuvaus:') }}
+          {{ Form::textarea('description', null, ['class' => 'form-control']) }}
 
         </div>
 
 
         <div class="form-group">
 
-          {{ Form::label('thumbnail', 'Thumbnail:') }}
-          {{ Form::file('thumbnail') }}
+          {{ Form::label('filename', 'Liitetiedosto:') }}
+          {{ Form::file('filename') }}
 
         </div>
 

@@ -18,8 +18,8 @@ class CreateTranslationsTable extends Migration {
       $table->increments('id');
       $table->integer('user_id')->index();
       $table->string('title');
-      $table->text('body');
-      $table->string('thumbnail');
+      $table->text('description');
+      $table->string('filename');
       $table->timestamps();
 
     });

@@ -1,11 +1,13 @@
 <?php
 
+use Lingoneer\Translations\Translation;
+
+
 
 class TranslationsController extends \BaseController {
 
 
-  // Tarjouspyyntölomake
-  // shows the request form
+  // näyttää käännösten syöttö formin
   public function create() {
 
     return View::make('translations.create');
@@ -13,19 +15,22 @@ class TranslationsController extends \BaseController {
   }
 
 
+  // tallentaa formin
   public function store() {
 
     // validation here
 
-    $rq = new Translation;
+    $tr = new Translation;
 
-    $rq->title = Input::get('title');
-    $rq->body = Input::get('body');
+    $tr->user_id = Auth::id();
+
+    $tr->title = Input::get('title');
+    $tr->description = Input::get('description');
 
 
-    if (Input::hasFile('thumbnail')) {
+    if (Input::hasFile('filename')) {
 
-      $file = Input::file('thumbnail');
+      $file = Input::file('filename');
 
       //$file->move(public_path() . '/uploads/', 'filunki.png');
 
@@ -46,13 +51,15 @@ class TranslationsController extends \BaseController {
 
       $saved_file = $file->move(public_path() . '/uploads/', time() . '-' . $file->getClientOriginalName());
 
+      //dd($saved_file);
 
-      $rq->thumbnail = $saved_file->getRealPath();
+
+      $tr->filename = $saved_file->getRealPath();
 
     }
 
 
-    $rq->save();
+    $tr->save();
 
     return 'done';
 

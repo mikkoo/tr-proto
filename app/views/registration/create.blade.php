@@ -9,7 +9,7 @@
 
     <div class="col-md-12">
 
-      <h1>Register</h1>
+      <h1>Luo käyttäjätunnus</h1>
 
 
       @include('layouts.partials.errors')
@@ -19,7 +19,7 @@
 
         <div class="form-group">
 
-          {{ Form::label('username', 'Username:') }}
+          {{ Form::label('username', 'Tunnus:') }}
           {{ Form::text('username', null, ['class' => 'form-control']) }}
 
         </div>
@@ -27,7 +27,7 @@
 
         <div class="form-group">
 
-          {{ Form::label('email', 'Email:') }}
+          {{ Form::label('email', 'Sähköposti:') }}
           {{ Form::text('email', null, ['class' => 'form-control']) }}
 
         </div>
@@ -35,14 +35,14 @@
 
         <div class="form-group">
 
-          {{ Form::label('password', 'Password:') }}
+          {{ Form::label('password', 'Salasana:') }}
           {{ Form::password('password', ['class' => 'form-control']) }}
 
         </div>
 
         <div class="form-group">
 
-          {{ Form::label('password_confirmation', 'Password Confirmation:') }}
+          {{ Form::label('password_confirmation', 'Salasana uudelleen:') }}
           {{ Form::password('password_confirmation', ['class' => 'form-control']) }}
 
         </div>
@@ -50,7 +50,7 @@
 
         <div class="form-group">
 
-          {{ Form::submit('Sign Up', ['class' => 'btn btn-primary']) }}
+          {{ Form::submit('Luo', ['class' => 'btn btn-primary']) }}
 
         </div>
 

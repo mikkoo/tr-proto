@@ -3,7 +3,10 @@
 
 @section('content')
 
-  <h1>Sign In</h1>
+  <h1>Sisäänkirjautuminen</h1>
+
+  <p>Kirjaudu sisään sähköpostiosoitteellasi.</p>
+
 
   @include('layouts.partials.errors')
 
@@ -12,7 +15,7 @@
 
     <div class="form-group">
 
-      {{ Form::label('email', 'Email:') }}
+      {{ Form::label('email', 'Sähköposti:') }}
       {{ Form::text('email', null, ['class' => 'form-control']) }}
 
     </div>
@@ -20,7 +23,7 @@
 
     <div class="form-group">
 
-      {{ Form::label('password', 'Password:') }}
+      {{ Form::label('password', 'Salasana:') }}
       {{ Form::password('password', ['class' => 'form-control']) }}
 
     </div>
@@ -28,7 +31,7 @@
 
     <div class="form-group">
 
-      {{ Form::submit('Sign In', ['class' => 'btn btn-primary']) }}
+      {{ Form::submit('Kirjaudu sisään', ['class' => 'btn btn-primary']) }}
 
     </div>
 

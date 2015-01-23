@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      {{ link_to_route('home', 'Tarjouspyyntödemo', null, ['class' => 'navbar-brand']) }}
+      {{ link_to_route('home', 'KÄÄNNÖSPROTO', null, ['class' => 'navbar-brand']) }}
     
     </div>
 
@@ -19,8 +19,15 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-        <li>{{ link_to_route('request_path', 'Lähetä tarjouspyyntö') }}</li>
-        <li>{{ link_to_route('translation_path', 'Lähetä tiedosto') }}</li>
+        
+        @if (Auth::check())
+
+          <li>{{ link_to_route('translation_create', 'Lähetä käännös') }}</li>
+          <li>{{ link_to_route('translation_index', 'Näytä käännökset') }}</li> 
+      
+        @endif
+
+
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -38,18 +45,17 @@
             </a>
 
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">Preferences</a></li>
+              <li>{{ link_to_route('profile_path', 'Profiili') }}</li>
               <li class="divider"></li>
-              <li>{{ link_to_route('logout_path', 'Log Out') }}</li>
+              <li>{{ link_to_route('logout_path', 'Kirjaudu ulos') }}</li>
             </ul>
           </li>
   
         @else
 
-          <li>{{ link_to_route('register_path', 'Register') }}</li>
+          <li>{{ link_to_route('register_path', 'Luo käyttäjätunnus') }}</li>
 
-          <li>{{ link_to_route('login_path', 'Log In') }}</li>
+          <li>{{ link_to_route('login_path', 'Kirjaudu sisään') }}</li>
 
         @endif 
 

@@ -11,6 +11,14 @@ class RegistrationController extends \BaseController {
 	}
 
 
+  // shows users information
+  public function profile() {
+
+    return View::make('registration.profile');
+
+  }
+
+
 
 
   // validates the form inputs and saves user

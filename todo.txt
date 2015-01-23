@@ -1,10 +1,10 @@
 
-Tarjouspyynnöt demo TODO
+Käännösproto TODO
 ------------------------
 
 
+->kato laracast file uploads 101 loppuun ja selvitä miks ei se nyt sitten taaskaan toimi file uploadaus, mitä oikein rikoin siellä... ???
 
--> request taitaa jonkun kanssa mennä ristiin, joten luo jollain muulla nimellä se ja hoitele sen jälkeen loppuun tiedostojen uploadaus hommeli, kato laracast file uploads 101 loppuun
 
 
 
