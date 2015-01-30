@@ -12,7 +12,7 @@
       <h1>Omat tiedot</h1>
 
 
-      <table class='table'>
+      <table class='table table-striped table-hover'>
 
         <tbody>
 

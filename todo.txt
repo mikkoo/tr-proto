@@ -2,6 +2,51 @@
 Käännösproto TODO
 ------------------------
 
+proton puutteet:
+
+-kääntäjä user status
+-kääntäjä näkee kaikki lähetetyt tiedostot
+-vain kääntäjä voi muuttaa tilaa
+
+
+
+
+
+Hei Kari ja Reijo,
+
+Loppuvuodesta juteltiin siitä käännösten tilan seuranta -softasta. Olen vähän pyöritellyt koodia ja luonnostellut pienimuotoisen prototyypin jossa on seuraavanlaisia ominaisuuksia:
+
+-asiakkaat voivat kirjautua sisään
+-asiakkaat voivat lähetellä tiedostoja käännettäviksi
+-asiakkaat voivat seurata lähetettyjen tiedostojen tilaa
+-kääntäjät voivat kirjautua sisään
+-kääntäjät voivat seurata mitä tiedostoja on lähetetty
+-kääntäjät voivat muuttaa tiedostojen (käännösten) tilaa (esim. lähetetty/käännettävänä/valmis)
+
+Voisin luoda lingoneerin sivuille alidomainin (esim. "translations.lingoneer.com") josta prototyyppi avautuisi ja voisitte sitä tarkastella.
+
+-pitäiskö luoda proto lingoneer.com:iin vai jonnekin muualle
+
+-paljonko maksaa alidomain esim. lingoneer.ee:ssä???
+
+-pitäisikö nettisivujen kautta tulevat tarjouspyynnöt automaattisesti mennä tänne tän systeemin alle
+
+Ne Metsolla katsomamme softat olivat aika massiivisia järjestelmiä joita on kehitetty pitkään ja meidän kannattaisi lähteä ensin jostain pienestä liikkeelle ja lisätä softaan ominaisuuksia pikku hiljaa, ettei heti alussa yritetä saada kaikkea mahdollista toiminnallisuutta mukaan.
+
+
+
+
+
+
+
+-> jatka relationships video loppuun miksei löydä findorfail() juttua
+
+
+-virtuaalikoneen paketit update aja
+
+-minne tulee tuotantoympäristö, esim translations.lingoneer.com???
+
+
 -ei saa voida nähdä käännöksiä jos ei ole kirjautunut
 
 

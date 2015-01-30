@@ -12,6 +12,8 @@
 
       <h1>Käännökset</h1>
 
+      <hr />
+
       <p>
         {{ link_to_route('translation_create', 'Lähetä käännös', null, ['class' => 'btn btn-primary']) }}
       </p>
@@ -19,7 +21,7 @@
       <hr />
 
 
-      <h2>Käännösten tilat</h2>
+      <h2>Lähetetyt käännökset</h2>
 
       <p>Tilat: Lähetetty | Käännettävänä | Valmis</p>
 
@@ -35,6 +37,7 @@
             <th>Kuvaus</th>
             <th>Tiedosto</th>
             <th>Tila</th>
+            <th>Toiminnot</th>
           </tr>
 
         </thead>
@@ -47,11 +50,21 @@
 
               <td>{{ $translation->id }}</td>
               <td>{{ $translation->created_at->diffForHumans() }}</td>
-              <td>{{ $translation->user_id }}</td>
+              <td>{{ $translation->user->username }}</td>
               <td>{{ $translation->title }}</td>
               <td>{{ $translation->description }}</td>
               <td>{{ $translation->filename }}</td>
-              <td>Tila{{-- $translation->status --}}</td>
+              
+              <td>{{ $translation->statuses->last()->title }}</td>
+
+              <td>
+                {{--<span class="glyphicon glyphicon-file" aria-hidden="true"></span>--}}
+                {{ link_to_route('translation_show', 'Näytä', ['id' => $translation->id], ['class' => '']) }}
+                /
+                {{--<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>--}}
+                {{ link_to_route('translation_edit', 'Muokkaa', ['id' => $translation->id], ['class' => '']) }}
+
+              </td>
               
             </tr>
 

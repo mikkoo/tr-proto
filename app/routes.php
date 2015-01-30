@@ -68,6 +68,23 @@ Route::get('translations/create',   ['as' => 'translation_create', 'uses' => 'Tr
 Route::post('translations/create',  ['as' => 'translation_create', 'uses' => 'TranslationsController@store']);
 
 
+Route::get('translations/{id}', ['as' => 'translation_show', 'uses' => 'TranslationsController@show']);
 
+Route::get('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'TranslationsController@edit']);
+
+
+Route::post('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'TranslationsController@update']);
+
+
+// STATUSES
+
+Route::get('{username}', function($username) {
+
+  return $username;
+
+});
+
+
+Route::resource('nerds', 'NerdController');
 
 
