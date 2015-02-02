@@ -33,6 +33,42 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 
 
+	public function roles() {
+
+		return $this->belongsToMany('Role');
+
+	}
+
+
+	// if user has the particular given role
+	public function hasRole($name) {
+
+		foreach ($this->roles as $role) {
+
+			if ($role->name == $name) return true;
+
+		}
+
+		return false;
+
+	}
+
+
+	// give a role to the user
+	public function assignRole($role) {
+
+		return $this->roles()->attach($role);
+
+	}
+
+	// remove a role from the user
+	public function removeRole($role) {
+
+		return $this->roles()->detach($role);
+
+	}
+
+
 
 
 	// relationship
@@ -41,6 +77,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->hasMany('Lingoneer\Translations\Translation');
 
 	}
+
+
+
+
 
 
 }

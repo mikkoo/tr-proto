@@ -76,15 +76,44 @@ Route::get('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'Tra
 Route::post('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'TranslationsController@update']);
 
 
-// STATUSES
 
-Route::get('{username}', function($username) {
 
-  return $username;
+// ROLE PLAYING
+
+Route::get('roleplay', function() {
+
+
+  $user = User::create(['username' => 'roleplay', 'email' => 'roleplay@example.com', 'password' => Hash::make('salainen')]);
+
+  $customer = Role::create(['name' => 'customer']);
+  $translator = Role::create(['name' => 'translator']);
+  $admin = Role::create(['name' => 'admin']);
+
+
+  return 'donexpsls!';
 
 });
 
 
-Route::resource('nerds', 'NerdController');
+Route::get('rolea', function() {
+
+  //$user = User::find(14)->roles()->attach(2);
+
+  $user = User::find(14);
+
+  $user->assignRole(3);
+  //$user->removeRole(2);
+
+  return $user->roles->first()->name;
+
+});
+
+
+
+Route::get('secret', function() {
+
+  return 'this is my secret';
+
+})->before('role:admin');
 
 
