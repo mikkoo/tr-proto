@@ -51,7 +51,7 @@
                 {{ link_to_route('translation_show', 'Näytä', ['id' => $translation->id], ['class' => '']) }}
                 /
                 {{--<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>--}}
-                {{ link_to_route('translation_edit', 'Muokkaa', ['id' => $translation->id], ['class' => '']) }}
+                {{ link_to_route('translation_edit', 'Muokkaa tilaa', ['id' => $translation->id], ['class' => '']) }}
 
               </td>
               

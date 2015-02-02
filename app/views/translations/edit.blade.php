@@ -20,7 +20,8 @@
         <div class="form-group">
 
           {{ Form::label('title', 'Tila:') }}
-          {{ Form::text('title', null, ['class' => 'form-control']) }}
+          {{-- Form::text('title', null, ['class' => 'form-control']) --}}
+          {{ Form::select('title', ['Lähetetty' => 'Lähetetty', 'Käännettävänä' => 'Käännettävänä', 'Valmis' => 'Valmis']) }}
 
         </div>
 

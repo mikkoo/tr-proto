@@ -2,12 +2,6 @@
 Käännösproto TODO
 ------------------------
 
-proton puutteet:
-
--kääntäjä voi ladata tiedostoja
-
-
-
 
 Hei Kari ja Reijo,
 
