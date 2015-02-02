@@ -193,7 +193,18 @@ class TranslationsController extends \BaseController {
   }
 
 
+  // voit ladata tiedoston
+  public function download($id) {
 
+    $translation = Translation::find($id);
+
+    $filename = $translation->filename;
+
+    $path_to_file = public_path() . '/uploads/' . $filename;
+
+    return Response::download($path_to_file);
+
+  }
 
 
 

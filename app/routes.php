@@ -90,6 +90,8 @@ Route::get('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'Tra
 Route::post('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'TranslationsController@update']);
 
 
+Route::get('translations/{id}/download', ['as' => 'translation_download', 'uses' => 'TranslationsController@download']);
+
 
 
 

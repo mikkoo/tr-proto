@@ -4,7 +4,6 @@ Käännösproto TODO
 
 proton puutteet:
 
--vain kääntäjä voi muuttaa tilaa
 -kääntäjä voi ladata tiedostoja
 
 
