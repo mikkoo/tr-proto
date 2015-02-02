@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="192" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Wed Feb 12 15:50:19 2014
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Mikko</m>
+<m key="dc.date">Wed Feb 12 15:50:19 2014
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="1" edit-time="3388" last-saved="1392213019" uid="b8f90298-93e4-11e3-9083-90815abeabb9">
+<version id="1" started="1392213019" uid="9c03bd9c-93ec-11e3-9083-90815abeabb9" auto="0" top-xid="192"/>
+</history>
+<styles>
+<s type="P" name="Heading 1" basedon="Normal" followedby="Normal" props="keep-with-next:1; margin-top:22pt; font-weight:bold; margin-bottom:3pt; font-family:Liberation Sans; font-size:17pt"/>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+<s type="P" name="Heading 2" basedon="Normal" followedby="Normal" props="keep-with-next:1; margin-top:22pt; font-weight:bold; margin-bottom:3pt; font-family:Liberation Sans; font-size:14pt"/>
+<s type="P" name="Block Text" basedon="Normal" followedby="Current Settings" props="margin-bottom:6pt; margin-left:1in; margin-right:1in"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section header="0" xid="165" props="page-margin-header:0.5in; page-margin-footer:0.5in; page-margin-top:1.8340in">
+<p style="Heading 1" xid="166" props="text-align:left"><c></c><c>PALKANMAKSUN KUVAUS</c></p>
+<p style="Heading 2" xid="157" props="text-align:left; dom-dir:ltr"><c>Ajankohta</c></p>
+<p style="Block Text" xid="158" props="text-align:left; dom-dir:ltr"><c></c><c>Palkanlaskenta aloitetaan Vismassa joka arkiaamu klo 10 aikoihin.</c></p>
+<p style="Block Text" xid="161" props="text-align:left; dom-dir:ltr"><c></c><c>E-tunnus voi siis luvata palkansaajille että palkka maksetaan viimeistään seuraavana arkipäivänä siitä kun laskutuksen suoritus on saapunut e-tunnuksen tilille ja palkanmaksuehdot (käyttäjän palkanmaksutoive) täyttyvät.</c></p>
+<p style="Heading 2" xid="164" props="text-align:left; dom-dir:ltr"><c>Verokortit</c></p>
+<p style="Block Text" xid="8" props="text-align:left; dom-dir:ltr"><c></c><c>Jotta palkkaa voidaan maksaa, Vismalla täytyy olla palkansaajan verokortti. Päätuloverokortin täytyy olla alkuperäinen. Muut verokortit voi lähettää skannattuina sähköpostilla. e-tunnukselle, josta ne välitetään Vismaan. Vismalla täytyy olla palkansaajan henkilötunnus tiedossa jotta palkanlaskenta voi alkaa.</c></p>
+<p style="Block Text" xid="11" props="text-align:left; dom-dir:ltr"><c>Palkkaa, johon liittyy kulukorvauksia, voidaan maksaa, kun alkuperäiset kulukuitit ovat saapuneet postissa Vismaan.</c></p>
+<p style="Block Text" xid="13" props="text-align:left; dom-dir:ltr"><c>E-tunnuksen käyttäjät lähettävät alkuperäiset verokortit ja kulukuitit kirjekuorissa vastauslähetysosoitteeseen:</c></p>
+<p style="Block Text" xid="15" props="text-align:left; dom-dir:ltr"><c>Suomen e-tunnus Oy</c></p>
+<p style="Block Text" xid="16" props="text-align:left; dom-dir:ltr"><c>Tunnus 5020461</c></p>
+<p style="Block Text" xid="17" props="text-align:left; dom-dir:ltr"><c>00003 VASTAUSLÄHETYS</c></p>
+<p style="Block Text" xid="20" props="text-align:left; dom-dir:ltr"><c>Posti ohjautuu osoitteeseen:</c></p>
+<p style="Block Text" xid="22" props="text-align:left; dom-dir:ltr"><c>Visma Services Oy</c></p>
+<p style="Block Text" xid="23" props="text-align:left; dom-dir:ltr"><c>Meri-Marika Levänen</c></p>
+<p style="Block Text" xid="24" props="text-align:left; dom-dir:ltr"><c>Haarlankatu 1 B</c></p>
+<p style="Block Text" xid="25" props="text-align:left; dom-dir:ltr"><c>33230 Tampere</c></p>
+<p style="Block Text" xid="172" props="text-align:left; dom-dir:ltr"><c>Sähköpostilla lähetettävät verokortit käyttäjät lähettävät e-tunnukselle, josta ne ohjataan Vismaan osoitteeseen: meri-marika.levanen@visma.com.</c></p>
+<p style="Heading 2" xid="174" props="text-align:left; dom-dir:ltr"><c>Palvelumaksu</c></p>
+<p style="Normal" xid="167" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Block Text" xid="28" props="text-align:left; dom-dir:ltr"><c>Palvelumaksu määräytyy seuraavan taulukon mukaisesti:</c></p>
+<p style="Block Text" xid="30" props="text-align:left; dom-dir:ltr"><c>Laskutus yhteensä 	Palvelumaksu</c></p>
+<p style="Block Text" xid="31" props="text-align:left; dom-dir:ltr"><c>alle 20.000 euroa 	7%</c></p>
+<p style="Block Text" xid="32" props="text-align:left; dom-dir:ltr"><c>yli 20.000 euroa 	6%</c></p>
+<p style="Block Text" xid="33" props="text-align:left; dom-dir:ltr"><c>yli 50.000 euroa 	5%</c></p>
+<p style="Block Text" xid="34" props="text-align:left; dom-dir:ltr"><c>yli 100.000 euroa 	4%</c></p>
+<p style="Block Text" xid="35" props="text-align:left; dom-dir:ltr"><c>yli 150.000 euroa 	3%</c></p>
+<p style="Block Text" xid="37" props="text-align:left; dom-dir:ltr"><c>Kun rajan ylittäneeseen laskutukseen liittyvä palkka on maksettu, pienenee palveluprosentti.</c></p>
+<p style="Block Text" xid="39" props="text-align:left; dom-dir:ltr"><c>E-tunnuksen minimipalvelumaksu on 20 euroa. Laskutushinnasta veloitetaan palvelumaksuprosentin suuruinen osuus, mutta vähintään minimipalvelumaksun suuruinen osuus. Palvelumaksuprosentin ollessa 7% minimipalvelumaksu veloitetaan alle 285,71 euron suuruisista palkoista. </c></p>
+<p style="Block Text" xid="41" props="text-align:left; dom-dir:ltr"><c>Huom. Palvelumaksuprosentin lisäksi ei siis veloiteta muita maksuja, ellei laskutushinta ole niin pieni että palvelumaksuprosentti menee alle minimipalvelumaksun. (Tämän suhteen on ollut epäselvyyksiä kun välillä on puhuttu että miminipalvelumaksuun lisätään palvelumaksuprosentti!)</c></p>
+<p style="Heading 2" xid="192" props="text-align:left; dom-dir:ltr"><c>Pankkitilit</c></p>
+<p style="Block Text" xid="170" props="text-align:left; dom-dir:ltr"><c></c><c>E-tunnuksella on tili Danske Bankissa. Danske Bankin tileille voidaan siis luvata palkan tulevan samana päivänä.</c></p>
+<p style="Block Text" xid="45" props="text-align:left; dom-dir:ltr"><c>Jokaisen palkanmaksun yhteydessä Visma lähettää palkkalaskelman postitse palkansaajalle. Palkansaajan postiosoite ja tilinumero näkyvät kunkin palkan kohdalla e-tunnus.fi Palkanlaskenta -osiossa. Huom! Osoite tai tilinumero voivat muuttua! Ne on tarkistettava palkanmaksun yhteydessä.</c></p>
+<p style="Block Text" xid="46" props="dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="47" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="48" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="49" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="50" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="51" props="text-align:left; dom-dir:ltr"><c></c></p>
+</section>
+<section id="0" listid="0" parentid="0" type="header" xid="1">
+<table xid="180" props="table-row-heights:0.9375in/; list-tag:1">
+<cell xid="181" props="left-attach:0; right-attach:1; bot-attach:1; top-attach:0; top-color:eeeeec; right-color:eeeeec; bg-style:1; left-color:eeeeec; bot-color:eeeeec">
+<p style="Normal" xid="182"><c></c><image dataid="5" xid="189" props="height:0.937500in; width:1.875000in"/></p>
+</cell>
+<cell xid="184" props="left-attach:1; right-attach:2; bot-attach:1; top-attach:0; top-color:eeeeec; right-color:eeeeec; bg-style:1; left-color:eeeeec; bot-color:eeeeec">
+<p style="Normal" xid="185" props="text-align:right">12.2.2014</p>
+<p style="Normal" xid="190" props="text-align:right"><c></c></p>
+<p style="Normal" xid="191" props="text-align:right">PALKANMAKSUN KUVAUS</p>
+</cell>
+</table>
+<p xid="2" props="text-align:left"></p>
+</section>
+<data>
+<d name="5" mime-type="image/png" base64="yes">
+iVBORw0KGgoAAAANSUhEUgAAALQAAABaCAIAAACe4euXAAAAGXRFWHRTb2Z0d2FyZQBBZG9i
+ZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tl
+dCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1l
+dGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUu
+MC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgt
+bnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8v
+bnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNv
+bS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w
+IENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4RjVGQzM3NDJE
+ODUxMUUzQUQ5MUZGM0NGMjkzMjA0MiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENEU5
+ODg4NjJFNjUxMUUzQUQ5MUZGM0NGMjkzMjA0MiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJl
+ZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhGNUZDMzcyMkQ4NTExRTNBRDkxRkYzQ0YyOTMyMDQy
+IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhGNUZDMzczMkQ4NTExRTNBRDkxRkYzQ0Yy
+OTMyMDQyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8
+P3hwYWNrZXQgZW5kPSJyIj8+ES5Q0AAADzpJREFUeNrsnAtUVNUax4f3Y2B4BAIO9lB5l8rL
+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
+YII=
+</d>
+</data>
+</abiword>

@@ -4,12 +4,8 @@ Käännösproto TODO
 
 proton puutteet:
 
--kääntäjä user status
-  -muokkaa users taulua niin että sinne tulee käyttäjätasot
-
--kääntäjä näkee kaikki lähetetyt tiedostot
 -vain kääntäjä voi muuttaa tilaa
-
+-kääntäjä voi ladata tiedostoja
 
 
 

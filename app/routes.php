@@ -62,11 +62,25 @@ Route::post('request',  ['as' => 'request_path', 'uses' => 'RequestsController@s
 
 // TRANSLATIONS
 
-Route::get('translations',   ['as' => 'translation_path', 'uses' => 'TranslationsController@index']);
+Route::get('translations',   ['as' => 'translation_path', 'uses' => 'TranslationsController@index'])->before('auth');
+
+
+Route::get('translations/all',
+              ['as' => 'translation_all', 'uses' => 'TranslationsController@all']
+            )->before('role:translator');
+
+
+
 
 Route::get('translations/create',   ['as' => 'translation_create', 'uses' => 'TranslationsController@create']);
 Route::post('translations/create',  ['as' => 'translation_create', 'uses' => 'TranslationsController@store']);
 
+
+/*Route::get('translations/{id}', function($id) {
+
+  return $id;
+
+});*/
 
 Route::get('translations/{id}', ['as' => 'translation_show', 'uses' => 'TranslationsController@show']);
 
@@ -74,6 +88,9 @@ Route::get('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'Tra
 
 
 Route::post('translations/{id}/edit', ['as' => 'translation_edit', 'uses' => 'TranslationsController@update']);
+
+
+
 
 
 
@@ -99,9 +116,9 @@ Route::get('rolea', function() {
 
   //$user = User::find(14)->roles()->attach(2);
 
-  $user = User::find(14);
+  $user = User::find(11);
 
-  $user->assignRole(3);
+  $user->assignRole(2);
   //$user->removeRole(2);
 
   return $user->roles->first()->name;

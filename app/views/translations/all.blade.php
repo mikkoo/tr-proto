@@ -12,17 +12,6 @@
 
       <h1>Käännökset</h1>
 
-      <hr />
-
-      <p>
-        {{ link_to_route('translation_create', 'Lähetä käännös', null, ['class' => 'btn btn-primary']) }}
-      </p>
-
-      <hr />
-
-
-      <h2>Lähetetyt käännökset</h2>
-
       <p>Tilat: Lähetetty | Käännettävänä | Valmis</p>
 
       <table class="table table-striped table-hover">
@@ -60,9 +49,9 @@
               <td>
                 {{--<span class="glyphicon glyphicon-file" aria-hidden="true"></span>--}}
                 {{ link_to_route('translation_show', 'Näytä', ['id' => $translation->id], ['class' => '']) }}
-                
+                /
                 {{--<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>--}}
-                {{-- link_to_route('translation_edit', 'Muokkaa', ['id' => $translation->id], ['class' => '']) --}}
+                {{ link_to_route('translation_edit', 'Muokkaa', ['id' => $translation->id], ['class' => '']) }}
 
               </td>
               

@@ -39,19 +39,16 @@ class TranslationsController extends \BaseController {
   public function show($id)
   {
 
-    // hakee tietyn käyttäjän käännökset joten ei tarvi erikseen tarkastaa onko käyttäjällä oikeus lukea käännöstä
+    $translation = '';
 
-    $user = User::where('id', Auth::id())->first();
-
-    $translation = $user->translations->find($id);
-
-
-   // dd($translation->statuses);
-
-
-
-
-    //$translation = Translation::where('id', $id)->first();
+    // jos translator niin hakee suoraan
+    if (Auth::user()->hasRole('translator')) {
+      $translation = Translation::where('id', $id)->first();
+    // jos muu niin hakee vain omistaan
+    } else {
+      $user = User::where('id', Auth::id())->first();
+      $translation = $user->translations->find($id);
+    }
 
     return View::make('translations.show', ['translation' => $translation]);
 
@@ -142,9 +139,16 @@ class TranslationsController extends \BaseController {
   public function edit($id) {
 
 
-    $user = User::where('id', Auth::id())->first();
 
-    $translation = $user->translations->find($id);
+    // jos translator niin hakee suoraan
+    if (Auth::user()->hasRole('translator')) {
+      $translation = Translation::where('id', $id)->first();
+
+    // jos muu niin hakee vain omistaan
+    } else {
+      $user = User::where('id', Auth::id())->first();
+      $translation = $user->translations->find($id);
+    }
 
 
     return View::make('translations.edit', ['translation' => $translation]);
@@ -156,9 +160,9 @@ class TranslationsController extends \BaseController {
   // creates a new state for given translation
   public function update($translation_id) {
 
-    $user = User::where('id', Auth::id())->first();
+    // todo: miten estetään ettei kukaan pääse muokkaamaan luvatta
 
-    $translation = $user->translations->find($translation_id);
+    $translation = Translation::find($translation_id);
 
     $status = new Status();
     $status->title = Input::get('title');
@@ -176,6 +180,20 @@ class TranslationsController extends \BaseController {
     }
 
   }
+
+
+
+  // shows everything for translator
+  public function all() {
+
+    $translations = Translation::all();
+
+    return View::make('translations.all', ['translations' => $translations]);
+
+  }
+
+
+
 
 
 

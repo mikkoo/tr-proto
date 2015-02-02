@@ -20,10 +20,19 @@
 
       <ul class="nav navbar-nav">
         
+
         @if (Auth::check())
 
-          <li>{{ link_to_route('translation_path', 'Käännökset') }}</li>
+          @if (Auth::user()->hasRole('translator'))
+
+            <li>{{ link_to_route('translation_all', 'Kaikki käännökset') }}</li>
+
+          @else
+
+            <li>{{ link_to_route('translation_path', 'Omat käännökset') }}</li>
       
+          @endif
+
         @endif
 
 
